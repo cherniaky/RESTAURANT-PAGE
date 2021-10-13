@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --page2: rgb(203, 230, 129);
+    --page2active: rgb(206, 250, 85);
+    --page1: rgb(182, 243, 243);
+    --page1active: rgb(119, 255, 255);
+    --page3: rgb(86, 196, 145);
+    --page3active: rgb(54, 231, 148);
+    --content : coral ;
+}
+html {
+   
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Yusei Magic', sans-serif;
+    overflow-x: hidden;
+}
+#top{
+
+    position:static;
+    background-color: azure;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 9vh;
+}
+
+#top div {
+    padding: 2vh;
+    margin: 2vh;
+    margin-bottom: 0;
+    /* background-color: rgb(182, 243, 243); */
+    border: 1px solid black;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+}
+#top div:hover{
+    cursor: pointer;
+}
+#page1{
+    background-color:  var(--page1);
+}
+#page2{
+    background-color:  var(--page2);
+}
+#page3{
+    background-color:  var(--page3);
+}
+
+#page1:hover{
+    background-color: var(--page1active);
+   
+}
+#page2:hover{
+    background-color: var(--page2active);
+    
+}
+#page3:hover{
+    background-color: var(--page3active);
+   
+}
+#content{
+    height:calc(91vh); 
+    
+    width: 100%;
+    background-color: rgb(182, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerPage{
+    background-color: var(--content);
+    width: 70%;
+    height: 70vh;
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.innerPage div{
+    text-align: center;
+    background-color: coral;
+    white-space: pre-line;
+    padding: 5px;
+    margin: 5px;
+}
+img{
+    object-fit: cover;
+    width: 60%;
+}
